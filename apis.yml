@@ -1,7 +1,24 @@
 aid: tuli
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tuli.png
 name: Tuli
-description: Tuli is a company surfaced as a portfolio company of kindred-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tuli Health operates a UK-wide network of over 300 high-street pharmacies
+  as local diagnostic hubs, making clinical services - primarily blood testing and
+  phlebotomy - accessible in every neighbourhood so people can get care close to home.
+  It offers healthcare providers three models - One Network (white-label phlebotomy),
+  One Solution (end-to-end test kits, draws and lab analysis), and an Enterprise tier
+  with custom integration. Tuli exposes an API and web portal for booking and managing
+  tests, though public developer documentation is not yet published.
 url: https://raw.githubusercontent.com/api-evangelist/tuli/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Diagnostics
+- Blood Testing
+- Phlebotomy
+- Pharmacy
+- Health Tech
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +47,18 @@ maintainers:
 common:
 - type: Website
   url: https://tuli.health/
+- type: Login
+  url: https://portal.tuli.health
+- type: Support
+  url: https://tulisupport.crisp.help/en/category/general-c5u9fq/
+- type: TermsOfService
+  url: https://tuli.health/terms-of-services
+- type: PrivacyPolicy
+  url: https://tuli.health/privacy-policy
+- type: DomainSecurity
+  url: security/tuli-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
